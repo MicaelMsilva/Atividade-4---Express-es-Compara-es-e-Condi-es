@@ -1,0 +1,21 @@
+     real precol= 480.00
+    inteiro cpL= 18
+    inteiro area
+     real litrosn
+     inteiro t
+     inteiro precot
+
+escreva("Digite o tamanho da área a ser pintada em metros quadrados: ")
+leia(area)
+
+litrosn = (area / 3.0)
+t = litrosn / cpL
+se (litrosn / cpL != 0 ){
+ 
+    t = t + 1}
+
+
+precot = t * precol
+
+escreva("Quantidade de latas de tinta a serem compradas: ", t)
+escreva("Preço total: R$", precot)
