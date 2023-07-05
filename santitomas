@@ -1,0 +1,58 @@
+programa
+{
+	
+	funcao inicio()
+	{
+
+
+	
+  
+   
+   inteiro sintomasGraves
+   cadeia resposta
+   inteiro sintomasComuns
+
+
+   escreva("Você está sentindo algum dos seguintes sintomas? (S/N)")
+   escreva("\n1. Febre")
+   escreva("\n2. Tosse")
+   escreva("\n3. Dificuldade respiratória")
+   escreva("\n4. Dor de garganta")
+   escreva("\n5. Perda de paladar ou olfato")
+   escreva("\n6. Dor de cabeça")
+   escreva("\n7. Dores musculares ou nas articulações")
+   escreva("\n8. Fadiga ou cansaço")
+   escreva("\n9. Náuseas, vômitos ou diarreia")
+   escreva("\n10. Congestão nasal ou coriza\n")
+   leia(resposta)
+   
+   sintomasComuns = 0
+   sintomasGraves = 0
+
+   se (resposta == "S" ou resposta =="s" )
+   {
+
+      escreva("\nQuantos sintomas comuns você está sentindo?")
+      leia(sintomasComuns)
+
+      escreva("Quantos sintomas graves você está sentindo?")
+      leia(sintomasGraves)
+	}
+
+     
+      se (sintomasGraves > 0)
+      {
+         escreva("\nVocê está com COVID-19 (sintomas graves).")
+         }
+      
+      senao se (sintomasComuns > 0) {
+         escreva("\nVocê está com COVID-19 (sintomas comuns).")
+         }
+      senao{
+         escreva("\nVocê não está com COVID-19.")
+         }
+      
+      
+
+	}
+}
