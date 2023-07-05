@@ -1,0 +1,51 @@
+programa
+{
+	inclua biblioteca Matematica -->m
+	
+	funcao inicio()
+	{
+	
+    
+    real a=1
+    real b=1
+    real c=1
+    real delta=1
+    real x1=1
+    real x2=1
+
+escreva("Digite o valor de a: \n")
+leia(a)
+escreva("Digite o valor de b: \n ")
+leia(b)
+escreva("Digite o valor de c: \n ")
+leia(c)
+
+escreva("Valores fornecidos:\n")
+escreva("a= ", a, "\n")
+escreva("b= ", b, "\n")
+escreva("c= ", c, "\n")
+
+delta = (b * b) - (4 * a * c)
+
+escreva("Delta= ", delta, "\n")
+
+	se (delta < 0 ) 
+	   {
+
+	    escreva("Não existem raízes reais para a equação.")
+	    }
+
+	senao
+	   {
+	    x1 = (-b + m.raiz(delta,2)) / (2 * a)
+	    x2 = (-b - m.raiz(delta,2)) / (2 * a)
+	
+	    escreva("x1: ", x1, "\n")
+	    escreva("x2: ", x2, "\n")
+         }
+
+
+
+
+	}
+}
