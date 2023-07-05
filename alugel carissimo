@@ -1,0 +1,29 @@
+programa
+{
+	
+	funcao inicio()
+	{
+	
+       
+        real km
+        real dias
+        real preco_total
+        real preco_dia
+        real preco_km
+    
+    escreva ("Quantos quilômetros foram percorridos: \n")
+    leia (km)
+    
+    escreva ("Por quantos dias o carro foi alugado: \n")
+    leia (dias)
+    
+    preco_dia = 60.00
+    preco_km =0.15
+    
+    preco_total = (km * preco_km) + (dias * preco_dia)
+    
+    escreva ("O preço a pagar é: R$", preco_total)
+
+
+	}
+}
