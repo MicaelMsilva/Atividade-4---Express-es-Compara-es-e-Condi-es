@@ -1,0 +1,50 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro codigo
+        inteiro quantidade
+        real valorTotal
+        
+        escreva("Bem-vindo à Lanchonete do Campus!\n")
+        escreva("Digite o código do item pedido: ")
+        leia(codigo)
+        
+        escreva("Digite a quantidade desejada: ")
+        leia(quantidade)
+        
+        escolha (codigo)
+        {
+            caso 100:
+                valorTotal = quantidade * 5.00
+                escreva("Valor total a pagar: R$", valorTotal)
+                pare
+            caso 101:
+                valorTotal = quantidade * 2.60
+                escreva("Valor total a pagar: R$", valorTotal)
+                pare
+            caso 102:
+                valorTotal = quantidade * 3.80
+                escreva("Valor total a pagar: R$", valorTotal)
+                pare
+            caso 103:
+                valorTotal = quantidade * 9.00
+                escreva("Valor total a pagar: R$", valorTotal)
+                pare
+            caso 104:
+                valorTotal = quantidade * 11.00
+                escreva("Valor total a pagar: R$", valorTotal)
+                pare
+            caso 105:
+                valorTotal = quantidade * 3.00
+                escreva("Valor total a pagar: R$", valorTotal)
+                pare
+            caso 106:
+                valorTotal = quantidade * 1000.00
+                escreva("Valor total a pagar: R$", valorTotal)
+                pare
+            caso contrario:
+                escreva("Código inválido!")
+        }
+    }
+}
