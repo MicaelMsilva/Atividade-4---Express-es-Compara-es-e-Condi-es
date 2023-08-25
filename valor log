@@ -1,0 +1,22 @@
+programa
+{
+  inclua biblioteca Matematica
+    funcao inicio()
+    {
+        logico proposicaoA = 2 * 4 == 24 / 3
+        logico proposicaoB = (15 % 4) < (19 % 6)
+        logico proposicaoC = nao (2 < 5) != (8 == 8)
+        logico proposicaoD = verdadeiro ou falso
+        logico proposicaoE = 2 * 2 == Matematica.potencia(2, 2)
+        logico proposicaoF = verdadeiro e ((7 / 2) > 3.5)
+        logico proposicaoG = (Matematica.arredondar(2.8, 0) == 3) e verdadeiro
+        
+        escreva("a. (", proposicaoA, ")\n")
+        escreva("b. (", proposicaoB, ")\n")
+        escreva("c. (", proposicaoC, ")\n")
+        escreva("d. (", proposicaoD, ")\n")
+        escreva("e. (", proposicaoE, ")\n")
+        escreva("f. (", proposicaoF, ")\n")
+        escreva("g. (", proposicaoG, ")\n")
+    }
+}
